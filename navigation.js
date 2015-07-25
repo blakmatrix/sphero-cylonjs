@@ -9,7 +9,7 @@ keypress(process.stdin);
 
 Cylon
   .robot()
-  .connection('sphero', {adaptor: 'sphero', port: 'COM3'})
+  .connection('sphero', {adaptor: 'sphero', port: 'COM3'}) // or 4
   .device('sphero', {driver: 'sphero'})
   .on('error', console.log)
   .on('ready', function(bot) {
@@ -22,7 +22,7 @@ Cylon
         colorYellow = 0xFFFF00,
         colorPurple = 0x800080,
         // set up a variable to track the current speed of the sphero
-        speed = 40,
+        speed = 90,
         mainProg = null;
 
     // Lets start off the sphero with the color green
@@ -82,25 +82,29 @@ Cylon
       if (key && key.name === 'w') {
         console.log('Command: Move forward');
         // ======== <YOUR CODE BELOW HERE> ========
-
+        // uncomment the line below
+        // bot.sphero.roll(speed, 0); // this command will instruct the sphero to roll at speed in forward direction
         // ======== <YOUR CODE ABOVE HERE> ========
       }
       if (key && key.name === 'a') {
         console.log('Command: Move left');
         // ======== <YOUR CODE BELOW HERE> ========
-
+        // uncomment the line below
+        // bot.sphero.roll(speed, 270); // this command will instruct the sphero to roll at speed in left direction
         // ======== <YOUR CODE ABOVE HERE> ========
       }
       if (key && key.name === 's') {
         console.log('Command: Move backwards');
         // ======== <YOUR CODE BELOW HERE> ========
-
+        // uncomment the line below
+        // bot.sphero.roll(speed, 180); // this command will instruct the sphero to roll at speed in backwards direction
         // ======== <YOUR CODE ABOVE HERE> ========
       }
       if (key && key.name === 'd') {
         console.log('Command: Move right');
         // ======== <YOUR CODE BELOW HERE> ========
-
+        // uncomment the line below
+        // bot.sphero.roll(speed, 90); // this command will instruct the sphero to roll at speed in right direction
         // ======== <YOUR CODE ABOVE HERE> ========
       }
 
@@ -156,7 +160,14 @@ Cylon
     });
 
 
-
+console.log('// HINTS:')
+console.log('//')
+console.log('// c - calibrate')
+console.log('// f - finish calibration')
+console.log('// i - increase the \'speed\' variable')
+console.log('// k - decrease the \'speed\' variable')
+console.log('// spacebar - start main program')
+console.log('// ctrl+c - stop the entire program')
 
     // SetBackLED turns on the tail LED of the sphero that helps
     // identify the direction the sphero is heading.

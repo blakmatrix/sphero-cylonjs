@@ -67,7 +67,14 @@ Cylon
         }
       }
     });
-
+console.log('// HINTS:')
+console.log('//')
+console.log('// c - calibrate')
+console.log('// f - finish calibration')
+console.log('// i - increase the \'speed\' variable')
+console.log('// k - decrease the \'speed\' variable')
+console.log('// spacebar - start main program')
+console.log('// ctrl+c - stop the entire program')
     every((0.3).second(), function() {
       changingColor = true;
 
@@ -79,13 +86,22 @@ Cylon
       // You must shake your sphero to detect changes in
       // velocity.
       // ======== <YOUR CODE BELOW HERE> ========
+      // uncomment the lines beow to activate different else blocks
       if (max < 10) {
-        // ??
+        bot.sphero.color("white");
+      } else if (max < 100) {
+        bot.sphero.color("lightyellow");
+      } else if (max < 150) {
+        // bot.sphero.color("yellow");
+      } else if (max < 250) {
+        // bot.sphero.color("orange");
+      } else if (max < 350) {
+        // bot.sphero.color("orangered");
       } else if (max < 450) {
-        // ??
-      } else { // over 450
-        // ??
-      }
+        // bot.sphero.color("red");
+      } else {
+        bot.sphero.color("darkred");
+
       // ======== <YOUR CODE ABOVE HERE> ========
 
       // reset items
