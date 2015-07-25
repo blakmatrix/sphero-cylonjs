@@ -22,7 +22,7 @@ keypress(process.stdin);
 Cylon
   .robot()
   // be sure to change the XXX to your unique code
-  .connection('sphero', {adaptor: 'sphero', port: 'COM3'})
+  .connection('sphero', {adaptor: 'sphero', port: 'COM3'}) // or COM4
   .device('sphero', {driver: 'sphero'})
   .on('error', console.log)
   .on('ready', function(bot) {
@@ -112,6 +112,14 @@ Cylon
       // ======== <YOUR CODE ABOVE HERE> ========
     });
   });
+console.log('// HINTS:')
+console.log('//')
+console.log('// c - calibrate')
+console.log('// f - finish calibration')
+console.log('// i - increase the 'speed' variable')
+console.log('// k - decrease the 'speed' variable')
+console.log('// spacebar - start main program')
+console.log('// ctrl+c - stop the entire program')
 
 // This enables us to capture key presses
 process.stdin.setRawMode(true);
