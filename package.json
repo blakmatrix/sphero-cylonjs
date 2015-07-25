@@ -1,0 +1,17 @@
+{
+  "name": "sphero",
+  "version": "0.0.1",
+  "description": "Farrin's Sphero proj",
+  "main": "app.js",
+  "dependencies": {
+    "cylon": "^1.1.0",
+    "cylon-sphero": "^0.21.0",
+    "keypress": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
