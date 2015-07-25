@@ -27,7 +27,7 @@ Cylon
   .on('error', console.log)
   .on('ready', function(bot) {
     // variable declarations
-    var speed = 90, // speed will keep track of the number we set it to
+    var speed = 200, // speed will keep track of the number we set it to
         mainProg = null; // This is used to bind to a interval declaration,
                          // we do this so we can clear it later
 
@@ -73,7 +73,7 @@ Cylon
 
       // SPEED
       if (key && key.name === 'i') {
-        if (90 >= speed) { // we want to make sure we don't go past 100
+        if (490 >= speed) { // we want to make sure we don't go past 100
           speed = speed + 10;
         }
         console.log('Speed now increased to: ', speed);
@@ -94,7 +94,7 @@ Cylon
         // Make your bot roll fast enough and in the right direction to
         // knock over some pins!
         // ======== <YOUR CODE BELOW HERE> ========
-        // uncomment the line below
+        // TODO: uncomment the line below
         // bot.sphero.roll(speed, 0); // this command will instruct the sphero to roll at speed in forward direction       
         // ======== <YOUR CODE ABOVE HERE> ========
         });
@@ -109,7 +109,7 @@ Cylon
       // here is where you want to tell your sphero what to do if it hits something
       // If you were sphero, what would you do if you hit something?
       // ======== <YOUR CODE BELOW HERE> ========
-      // uncomment the line below
+      // TODO: uncomment the line below
       // bot.sphero.roll(speed, 180); // this command will instruct the sphero to roll at speed in a reverse direction
       // ======== <YOUR CODE ABOVE HERE> ========
     });

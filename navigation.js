@@ -22,7 +22,7 @@ Cylon
         colorYellow = 0xFFFF00,
         colorPurple = 0x800080,
         // set up a variable to track the current speed of the sphero
-        speed = 90,
+        speed = 200,
         mainProg = null;
 
     // Lets start off the sphero with the color green
@@ -82,35 +82,35 @@ Cylon
       if (key && key.name === 'w') {
         console.log('Command: Move forward');
         // ======== <YOUR CODE BELOW HERE> ========
-        // uncomment the line below
+        // TODO: uncomment the line below
         // bot.sphero.roll(speed, 0); // this command will instruct the sphero to roll at speed in forward direction
         // ======== <YOUR CODE ABOVE HERE> ========
       }
       if (key && key.name === 'a') {
         console.log('Command: Move left');
         // ======== <YOUR CODE BELOW HERE> ========
-        // uncomment the line below
+        // TODO: uncomment the line below
         // bot.sphero.roll(speed, 270); // this command will instruct the sphero to roll at speed in left direction
         // ======== <YOUR CODE ABOVE HERE> ========
       }
       if (key && key.name === 's') {
         console.log('Command: Move backwards');
         // ======== <YOUR CODE BELOW HERE> ========
-        // uncomment the line below
+        // TODO: uncomment the line below
         // bot.sphero.roll(speed, 180); // this command will instruct the sphero to roll at speed in backwards direction
         // ======== <YOUR CODE ABOVE HERE> ========
       }
       if (key && key.name === 'd') {
         console.log('Command: Move right');
         // ======== <YOUR CODE BELOW HERE> ========
-        // uncomment the line below
+        // TODO: uncomment the line below
         // bot.sphero.roll(speed, 90); // this command will instruct the sphero to roll at speed in right direction
         // ======== <YOUR CODE ABOVE HERE> ========
       }
 
       // SPEED
       if (key && key.name === 'i') {
-        if (90 >= speed) {
+        if (490 >= speed) {
           speed = speed + 10;
         }
         console.log('Speed now increased to: ', speed);
