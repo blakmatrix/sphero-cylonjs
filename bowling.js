@@ -22,7 +22,7 @@ keypress(process.stdin);
 Cylon
   .robot()
   // be sure to change the XXX to your unique code
-  .connection('sphero', {adaptor: 'sphero', port: '/dev/tty.Sphero-XXX-AMP-SPP'})
+  .connection('sphero', {adaptor: 'sphero', port: 'COM3'})
   .device('sphero', {driver: 'sphero'})
   .on('error', console.log)
   .on('ready', function(bot) {

@@ -9,7 +9,7 @@ keypress(process.stdin);
 
 Cylon
   .robot()
-  .connection('sphero', {adaptor: 'sphero', port: '/dev/tty.Sphero-RWB-AMP-SPP'})
+  .connection('sphero', {adaptor: 'sphero', port: 'COM3'})
   .device('sphero', {driver: 'sphero'})
   .on('error', console.log)
   .on('ready', function(bot) {
