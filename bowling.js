@@ -113,15 +113,16 @@ Cylon
       // bot.sphero.roll(speed, 180); // this command will instruct the sphero to roll at speed in a reverse direction
       // ======== <YOUR CODE ABOVE HERE> ========
     });
+    console.log('// HINTS:');
+    console.log('//');
+    console.log('// c - calibrate');
+    console.log('// f - finish calibration');
+    console.log('// i - increase the \'speed\' variable');
+    console.log('// k - decrease the \'speed\' variable');
+    console.log('// spacebar - start main program');
+    console.log('// ctrl+c - stop the entire program');
   });
-console.log('// HINTS:')
-console.log('//')
-console.log('// c - calibrate')
-console.log('// f - finish calibration')
-console.log('// i - increase the \'speed\' variable')
-console.log('// k - decrease the \'speed\' variable')
-console.log('// spacebar - start main program')
-console.log('// ctrl+c - stop the entire program')
+
 
 // This enables us to capture key presses
 process.stdin.setRawMode(true);

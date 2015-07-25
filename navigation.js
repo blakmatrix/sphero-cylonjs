@@ -160,14 +160,14 @@ Cylon
     });
 
 
-console.log('// HINTS:')
-console.log('//')
-console.log('// c - calibrate')
-console.log('// f - finish calibration')
-console.log('// i - increase the \'speed\' variable')
-console.log('// k - decrease the \'speed\' variable')
-console.log('// spacebar - start main program')
-console.log('// ctrl+c - stop the entire program')
+    console.log('// HINTS:');
+    console.log('//');
+    console.log('// c - calibrate');
+    console.log('// f - finish calibration');
+    console.log('// i - increase the \'speed\' variable');
+    console.log('// k - decrease the \'speed\' variable');
+    console.log('// spacebar - start main program');
+    console.log('// ctrl+c - stop the entire program');
 
     // SetBackLED turns on the tail LED of the sphero that helps
     // identify the direction the sphero is heading.

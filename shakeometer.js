@@ -67,14 +67,14 @@ Cylon
         }
       }
     });
-console.log('// HINTS:')
-console.log('//')
-console.log('// c - calibrate')
-console.log('// f - finish calibration')
-console.log('// i - increase the \'speed\' variable')
-console.log('// k - decrease the \'speed\' variable')
-console.log('// spacebar - start main program')
-console.log('// ctrl+c - stop the entire program')
+    console.log('// HINTS:');
+    console.log('//');
+    console.log('// c - calibrate');
+    console.log('// f - finish calibration');
+    console.log('// i - increase the \'speed\' variable');
+    console.log('// k - decrease the \'speed\' variable');
+    console.log('// spacebar - start main program');
+    console.log('// ctrl+c - stop the entire program');
     every((0.3).second(), function() {
       changingColor = true;
 
@@ -92,15 +92,16 @@ console.log('// ctrl+c - stop the entire program')
       } else if (max < 100) {
         bot.sphero.color("lightyellow");
       } else if (max < 150) {
-        // bot.sphero.color("yellow");
+        bot.sphero.color("yellow");
       } else if (max < 250) {
-        // bot.sphero.color("orange");
+        bot.sphero.color("orange");
       } else if (max < 350) {
-        // bot.sphero.color("orangered");
+        bot.sphero.color("orangered");
       } else if (max < 450) {
-        // bot.sphero.color("red");
+        bot.sphero.color("red");
       } else {
         bot.sphero.color("darkred");
+      }
 
       // ======== <YOUR CODE ABOVE HERE> ========
 
